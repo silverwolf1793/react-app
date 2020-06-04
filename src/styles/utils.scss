@@ -1,0 +1,22 @@
+@mixin transition-ease {
+    transition: all 0.5s ease-in-out;
+}
+
+@mixin quick-transition-ease {
+    transition: all 0.200s ease-in-out;
+}
+
+@mixin content-size{
+    margin-left: (100vw - $content-width)/2;
+    margin-right: (100vw - $content-width)/2;
+    height: $home-height;
+}
+
+$fancy-font-family: 'Merriweather', serif;
+
+$menu-height : 10vh;
+$footer-height : 5vh;
+
+$content-width: 90vw;
+
+$home-height : 97vh - $menu-height - $footer-height;

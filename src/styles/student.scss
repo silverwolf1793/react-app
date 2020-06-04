@@ -1,0 +1,36 @@
+.student{
+    @include content-size;
+    display:flex;
+    justify-content: center;
+}
+.student .photo{
+    border: 1px solid black;
+    height: 20vh;
+    width: 20vh;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin-right: 10vw;
+    background-image: url('./resources/girl.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.student table{
+    border-spacing: 0;
+}
+
+.student tr{
+    height: 4em;
+}
+
+.student tr td{
+    border-bottom: 1px solid rgb(187, 187, 187);
+    text-align: right;
+}
+
+.student .title{
+    font-weight: 700;
+    width: 20vw;
+    text-align: left;
+}

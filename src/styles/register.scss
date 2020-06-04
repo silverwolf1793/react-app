@@ -1,0 +1,49 @@
+.register{
+    @include content-size;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register form{
+    width: $content-width;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 60vh;
+    width: 30%;
+}
+
+.register form input[type=text],input[type=number]{
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.register form input::-webkit-outer-spin-button,
+.register form input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0; 
+}
+
+.register form input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+}
+
+.register form button{
+    border: 2px solid #ccc;
+    background-color: rgba(40,42,55, $alpha: 1.0);
+    color:white;
+    height: 3em;
+    width: 12em;
+    border-radius: 5px;
+    text-align: center;
+    align-self: center;
+    
+}
+
+.register form button:hover{
+    background-color: red;
+    @include quick-transition-ease
+}

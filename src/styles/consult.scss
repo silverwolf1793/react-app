@@ -1,0 +1,37 @@
+.consult{
+    @include content-size
+}
+.consult table{
+    width: 100%;
+    border-spacing: 0;
+}
+
+.consult table thead{
+   font-family: 'Roboto', sans-serif;;
+}
+
+.consult table tbody tr{
+    color: rgba($color: #999999, $alpha: 1.0);
+    height: 3em;
+}
+
+.consult table tbody tr:hover{
+    background-color: rgb(48, 47, 47);
+    color:white;
+    cursor: pointer;
+}
+
+.consult table tbody tr .name{
+    color: black;
+    font-weight: 500;
+}
+
+.consult table tbody tr:hover .name{
+    color: white;
+}
+
+.consult table .loading{
+    text-align: center;
+}
+
+
